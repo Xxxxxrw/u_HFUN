@@ -18,6 +18,9 @@ pip install -r requirements.txt
 1. The network model implementation code (6 blocks and 10 blocks) is located in directory `./src/model/`
 2. Network model diagram：
 ![image](https://github.com/user-attachments/assets/08431b98-8649-412c-884c-9c405bdd96c1)
+<img width="717" height="224" alt="image" src="https://github.com/user-attachments/assets/7a905676-2d27-4e37-bbfb-761fc545d825" />
+<img width="742" height="272" alt="image" src="https://github.com/user-attachments/assets/f8923e2e-3455-4221-b8f8-4253d04441f2" />
+
 
 # Codes 
 - This codes provide the testing and training code.
@@ -49,7 +52,6 @@ python main.py --model u_hfun --save ./train/u_HFUN_Div2k_x2 --scale 2 --lr 6e-4
 4. More training commond can be found in `./src/demo.sh` file, and the training results will be sorted in `./experiment/train/`
 
 ## Network quantitative comparison
-![image](https://github.com/user-attachments/assets/fd447332-158e-4ea7-8e96-ade01af59137)
 <img width="585" height="628" alt="image" src="https://github.com/user-attachments/assets/812c0c83-a411-49e0-8444-c63df46afc4e" />
 
 
