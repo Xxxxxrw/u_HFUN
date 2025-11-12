@@ -1,6 +1,6 @@
-# HIGAN [154K parameter]、HIGAN-S [101K parameter]
+# u-HFUN
 
-This is an official implementation of the paper “A high-frequency information guiding attention network for super-lightweight image super-resolution”.
+This is an official implementation of the paper “u-HFUN: Ultra-Lightweight Network with Hierarchical Feature Upsampler for Single Image Super-Resolution”.
 
 ## Dependencies
 
@@ -25,12 +25,12 @@ pip install -r requirements.txt
 ## How to Test
 1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1lsoyAjsUEyp7gm1t6vZI9j7jr9YzKzcF?usp=sharing)
 
-2. Three versions of pretrained models (HIGAN-S, HIGAN, and HIGAN-L) have be placed in `./pretrained/` folder. 
+2. All versions of pretrained models have be placed in `./pre_models/` folder. 
 
 3. The testing commands are placed in the './src/demo.sh' file. 
 Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding command of testing. Such as:
 ```
-python main.py --model HIGAN_6BLOCK --save ./test/HIGAN-S_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /Your_Path/HIGAN/pretrained/HIGAN-S_Div2k/higans_x2.pt --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
+python main.py --model u_hfun --save ./test/u_HFUN_Div2k_tiny_x2 --scale 2 --n_feats 32 --pre_train /Your_Path/u_HFUN/pretrained/../ --data_test Set5+Set14+B100+Urban100+Manga109 --test_only
 ```
 
 4. More testing commonds can be found in `./src/demo.sh` file and the output results will be sorted in `./experiment/test/`
@@ -44,12 +44,13 @@ python main.py --model HIGAN_6BLOCK --save ./test/HIGAN-S_Div2k_tiny_x2 --scale 
 4. The training commands are placed in the './src/demo.sh' file.
 Close comments in 'demo.sh' and run 'demo.sh' to execute the corresponding command of training. Such as:
 ```
-python main.py --model HIGAN_6BLOCK --save ./train/HIGAN-S_Div2k_x2 --scale 2 --lr 6e-4 --batch_size 32 --patch_size 128 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
+python main.py --model u_hfun --save ./train/u_HFUN_Div2k_x2 --scale 2 --lr 6e-4 --batch_size 32 --patch_size 128 --n_feats 32 --decay 200-400-600-800 --data_test Set5 --reset --epoch=1000
 ```
 4. More training commond can be found in `./src/demo.sh` file, and the training results will be sorted in `./experiment/train/`
 
 ## Network quantitative comparison
 ![image](https://github.com/user-attachments/assets/fd447332-158e-4ea7-8e96-ade01af59137)
+<img width="585" height="628" alt="image" src="https://github.com/user-attachments/assets/812c0c83-a411-49e0-8444-c63df46afc4e" />
 
 
 ## SR images visualization
