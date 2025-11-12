@@ -1,4 +1,4 @@
-# u-HFUN
+# u-HFUN: Ultra-Lightweight Network with Hierarchical Feature Upsampler for Single Image Super-Resolution
 
 This is an official implementation of the paper “u-HFUN: Ultra-Lightweight Network with Hierarchical Feature Upsampler for Single Image Super-Resolution”.
 
@@ -17,13 +17,12 @@ pip install -r requirements.txt
 # Model framework 
 1. The network model implementation code (6 blocks and 10 blocks) is located in directory `./src/model/`
 2. Network model diagram：
-![image](https://github.com/user-attachments/assets/08431b98-8649-412c-884c-9c405bdd96c1)
 <img width="717" height="224" alt="image" src="https://github.com/user-attachments/assets/7a905676-2d27-4e37-bbfb-761fc545d825" />
 <img width="742" height="272" alt="image" src="https://github.com/user-attachments/assets/f8923e2e-3455-4221-b8f8-4253d04441f2" />
 
 
 # Codes 
-- This codes provide the testing and training code.
+- This repository provides the code for training and testing.
   
 ## How to Test
 1. Download the five test datasets (Set5, Set14, B100, Urban100, Manga109) from [Google Drive](https://drive.google.com/drive/folders/1lsoyAjsUEyp7gm1t6vZI9j7jr9YzKzcF?usp=sharing)
@@ -56,9 +55,11 @@ python main.py --model u_hfun --save ./train/u_HFUN_Div2k_x2 --scale 2 --lr 6e-4
 
 
 ## SR images visualization
-1. We provided visualization of SR images for two versions of the model ( HIGAN and HIGAN-L) from [Google Drive](https://drive.google.com/drive/folders/1xiPOE22AExEcIe5-er3clOYFHCVCJo6F?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1vEOJaLGScgRGaIOeFI3q8w) (code：s8eg)
-2. Visual comparison of reconstructions in the paper（HIGAN）:
-![image](https://github.com/user-attachments/assets/2596a1ff-2813-4a63-a271-41dfade61593)
+1. We provided visualization of SR images of the model from [Google Drive](https://drive.google.com/drive/folders/1xiPOE22AExEcIe5-er3clOYFHCVCJo6F?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1vEOJaLGScgRGaIOeFI3q8w) (code：s8eg)
+2. Visual comparison of reconstructions in the paper（u_HFUN）:
+<img width="592" height="499" alt="image" src="https://github.com/user-attachments/assets/618dc5ac-41bb-4c38-8eb7-1045ff363581" />
+<img width="589" height="501" alt="image" src="https://github.com/user-attachments/assets/529a8d48-32a8-41b8-8d42-f93138f9c4da" />
+
 
 
 ## Contact
