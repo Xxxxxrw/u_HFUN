@@ -15,7 +15,7 @@ conda activate your_env_name
 pip install -r requirements.txt
 ```
 # Model framework 
-1. The network model implementation code (6 blocks and 10 blocks) is located in directory `./src/model/`
+1. The network model implementation code is located in directory `./src/model/`
 2. Network model diagram：
 <img width="717" height="224" alt="image" src="https://github.com/user-attachments/assets/7a905676-2d27-4e37-bbfb-761fc545d825" />
 <img width="742" height="272" alt="image" src="https://github.com/user-attachments/assets/f8923e2e-3455-4221-b8f8-4253d04441f2" />
@@ -55,7 +55,7 @@ python main.py --model u_hfun --save ./train/u_HFUN_Div2k_x2 --scale 2 --lr 6e-4
 
 
 ## SR images visualization
-1. We provided visualization of SR images of the model from [Google Drive](https://drive.google.com/drive/folders/1xiPOE22AExEcIe5-er3clOYFHCVCJo6F?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1vEOJaLGScgRGaIOeFI3q8w) (code：s8eg)
+1. We provided visualization of SR images of the model from [Baidu Drive](https://pan.baidu.com/s/1aDMJov3EefJnnODnrraBSg?pwd=a12c) (code：a12c)
 2. Visual comparison of reconstructions in the paper（u_HFUN）:
 <img width="592" height="499" alt="image" src="https://github.com/user-attachments/assets/618dc5ac-41bb-4c38-8eb7-1045ff363581" />
 <img width="589" height="501" alt="image" src="https://github.com/user-attachments/assets/529a8d48-32a8-41b8-8d42-f93138f9c4da" />
